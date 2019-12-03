@@ -6,14 +6,8 @@ class App < Sinatra::Base
     erb :newteam
   end
 
-  # Create a route that responds to a POST request at /team
-  # Have the form send a POST request to this route.
-  # Upon submission, pass the submitted data to the team.erb template.
   post "/team" do
     @team = params
     erb :team
   end
-
-
-
 end
