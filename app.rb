@@ -10,7 +10,7 @@ class App < Sinatra::Base
   # Have the form send a POST request to this route.
   # Upon submission, pass the submitted data to the team.erb template.
   post "/team" do
-    puts params
+    params.to_s
     erb :team
   end
 
